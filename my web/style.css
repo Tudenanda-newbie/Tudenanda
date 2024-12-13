@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html,body{
+    height:100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navcontainer{
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ffffff;
+    width: 100%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.pertama{
+    color: #2804aa; 
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 19px;
+
+}
+
+.kedua{
+    color: rgb(255, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 17px;
+    padding-top: 5.5px;
+   
+}
+
+
+.navigasi >ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigasi >ul >li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.navigasi >ul >li >a {
+    text-decoration: none;
+    color: #2804aa;
+}
+
+.navigasi >ul >li >a:hover{
+    color: red;
+    border-bottom: 2px solid rgb(255, 3, 3);
+    padding-bottom: 5px;
+}
+
+
+.icon-menu{
+    font-size: 24px;
+    color: #2804aa;
+    display: none;
+}
+
+@media (max-width : 600px) {
+    .navigasi{
+        flex-wrap: wrap;
+    }
+    .navigasi >ul{
+        position: absolute;
+        top: 65px;
+        right: 0%;
+        flex-direction: column;
+        background: rgba(12, 1, 128, 0.189);
+        width: 40%;
+        border-radius: 15px 1px 1px 16px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+    .navigasi >ul.sembunyi{
+        display: none;
+    }
+
+    .navigasi >ul >li{
+        padding: 35px;
+        
+    }
+
+    .icon-menu{
+        display: flex;
+    }
+
+}
+.contencontainer{
+display: flex;
+gap: 9.5rem;
+
+    
+
+}
+.pendahuluan {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    margin-top: 85px;
+    margin-left: 90px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.kata{
+    color: blue;
+
+}
+
+.pendahuluan2{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 90px;
+    font-family: sans-serif;
+}
+
+.gambar >img{
+padding-top: 75px;
+}
+
+.login{
+    display: inline-block; 
+    margin-left: 90px;
+    background-color: red;
+    padding: 9px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.login >a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width : 500px) {
+
+    .contencontainer{
+        display: inline-block;
+        width: 100%;
+
+    }
+
+
+    .pendahuluan{
+        margin-left: 90px;
+        margin-top: 60px;
+        font-size: 25px;
+
+    }
+
+    .pendahuluan2{
+        margin-right: 90px;
+        text-align: center;
+        background-color: rgb(44, 8, 228);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: small;
+    }
+
+
+    .login{
+        margin-top: 50px;
+        margin-left: 145px;
+    }
+
+    .gambar>img{
+        display: none;
+    }
+}
+.footer{
+    background-color: red;
+    margin-top: 135px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 5px;
+
+    
+}
+
+@media (max-width : 500px){
+    .footer{
+        font-size: 10px;
+    }
+}

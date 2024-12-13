@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html,body{
+    height:100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navcontainer{
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ffffff;
+    width: 100%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.pertama{
+    color: #2804aa; 
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 19px;
+
+}
+
+.kedua{
+    color: rgb(255, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 17px;
+    padding-top: 5.5px;
+   
+}
+
+
+.navigasi >ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigasi >ul >li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.navigasi >ul >li >a {
+    text-decoration: none;
+    color: #2804aa;
+}
+
+.navigasi >ul >li >a:hover{
+    color: red;
+    border-bottom: 2px solid rgb(255, 3, 3);
+    padding-bottom: 5px;
+}
+
+
+.icon-menu{
+    font-size: 24px;
+    color: #2804aa;
+    display: none;
+}
+
+@media (max-width : 600px) {
+    .navigasi{
+        flex-wrap: wrap;
+    }
+    .navigasi >ul{
+        position: absolute;
+        top: 65px;
+        right: 0%;
+        flex-direction: column;
+        background: rgba(12, 1, 128, 0.189);
+        width: 40%;
+        border-radius: 15px 1px 1px 16px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+    .navigasi >ul.sembunyi{
+        display: none;
+    }
+
+    .navigasi >ul >li{
+        padding: 35px;
+        
+    }
+
+    .icon-menu{
+        display: flex;
+    }
+
+}
+
+.contcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.judul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.judul>h1{
+    font-size: 70px;
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.judul>h2{
+    font-family: sans-serif;
+}
+
+
+.sosialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(orange, red,purple);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.8);
+    border: 1px solid rgb(124, 0, 0);
+}
+
+.instagram>h2{
+    color: #ffffff;
+    margin: 15px;
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.instagram>h3{
+    color: #ffffff;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+
+}
+
+.instagram>a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 25px;
+    font-family: fantasy;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.instagram>a:hover{
+    background-color: rgb(209, 5, 255);
+    padding: 5px;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#193db6,#5858ff);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.8);
+    border: 1px solid rgb(23, 8, 89);
+}
+
+.facebook>h2{
+    color: #ffffff;
+    margin: 15px;
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.facebook>h3{
+    color: #ffffff;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+}
+
+.facebook>a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 25px;
+    font-family: fantasy;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+.facebook>a:hover{
+    background-color: rgb(29, 149, 240);
+    padding: 5px;
+
+}
+
+
+.tiktok{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(pink,purple,#65a8ef);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.8);
+    border: 1px solid rgb(78, 8, 89);
+}
+
+.tiktok>h2{
+    color: #ffffff;
+    margin: 15px;
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tiktok>h3{
+    color: #ffffff;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+}
+
+.tiktok>a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 25px;
+    font-family: fantasy;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.tiktok>a:hover{
+    background-color: rgb(146, 219, 255);
+    padding: 5px;
+
+}
+
+
+@media (max-width : 500px){
+    .contcontainer{
+        display: flex;
+        align-items: center;
+    }
+
+    .judul>h1{
+        font-size: 50px;
+    }
+
+    .sosialmedia{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
+.footer{
+    background-color: red;
+    margin-top: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 5px;
+
+    
+}
+
+@media (max-width : 500px){
+    .footer{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html,body{
+    height:100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navcontainer{
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ffffff;
+    width: 100%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.pertama{
+    color: #2804aa; 
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 19px;
+
+}
+
+.kedua{
+    color: rgb(255, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 17px;
+    padding-top: 5.5px;
+   
+}
+
+
+.navigasi >ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigasi >ul >li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.navigasi >ul >li >a {
+    text-decoration: none;
+    color: #2804aa;
+}
+
+.navigasi >ul >li >a:hover{
+    color: red;
+    border-bottom: 2px solid rgb(255, 3, 3);
+    padding-bottom: 5px;
+}
+
+
+.icon-menu{
+    font-size: 24px;
+    color: #2804aa;
+    display: none;
+}
+
+@media (max-width : 600px) {
+    .navigasi{
+        flex-wrap: wrap;
+    }
+    .navigasi >ul{
+        position: absolute;
+        top: 65px;
+        right: 0%;
+        flex-direction: column;
+        background: rgba(12, 1, 128, 0.189);
+        width: 40%;
+        border-radius: 15px 1px 1px 16px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+    .navigasi >ul.sembunyi{
+        display: none;
+    }
+
+    .navigasi >ul >li{
+        padding: 35px;
+        
+    }
+
+    .icon-menu{
+        display: flex;
+    }
+
+}
+
+
+.actcontainner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+
+.judul>h1{
+    font-size: 70px;
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.aktivitas>img{
+    align-items: center;
+    margin: 20px;
+    border: #2804aa solid 3px;
+    border-radius: 100px;
+    width: 170px;
+    height: 170px;
+    box-shadow:  5px 5px 8px black;
+}
+
+
+@media (max-width : 500px){
+    .actcontainner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .aktivitas>img{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.footer{
+    background-color: red;
+    margin-top: 130px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 5px;
+
+    
+}
+
+@media (max-width : 500px){
+    .footer{
+        font-size: 10px;
+    }
+}

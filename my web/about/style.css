@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html,body{
+    height:100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navcontainer{
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ffffff;
+    width: 100%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.pertama{
+    color: #2804aa; 
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 19px;
+
+}
+
+.kedua{
+    color: rgb(255, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 17px;
+    padding-top: 5.5px;
+   
+}
+
+
+.navigasi >ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigasi >ul >li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.navigasi >ul >li >a {
+    text-decoration: none;
+    color: #2804aa;
+}
+
+.navigasi >ul >li >a:hover{
+    color: red;
+    border-bottom: 2px solid rgb(255, 3, 3);
+    padding-bottom: 5px;
+}
+
+
+.icon-menu{
+    font-size: 24px;
+    color: #2804aa;
+    display: none;
+}
+
+@media (max-width : 600px) {
+    .navigasi{
+        flex-wrap: wrap;
+    }
+    .navigasi >ul{
+        position: absolute;
+        top: 65px;
+        right: 0%;
+        flex-direction: column;
+        background: rgba(12, 1, 128, 0.189);
+        width: 40%;
+        border-radius: 15px 1px 1px 16px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+    .navigasi >ul.sembunyi{
+        display: none;
+    }
+
+    .navigasi >ul >li{
+        padding: 35px;
+        
+    }
+
+    .icon-menu{
+        display: flex;
+    }
+
+}
+
+.aboutcontainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user>h1{
+    font-family: "Squada One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: red;
+}
+
+.user >i{
+    font-size: 20rem;
+}
+
+.user>a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2804aa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tentang{
+    background-color: #2804aa;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 2.0;
+    border-radius: 15px;
+    padding-right: 120px;
+    font-size: 20px;
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 87.5;
+
+}
+
+.skil{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+
+.skil1 >i{
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #2804aa;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+
+.skil1 >a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.skil1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.skil2 >i{
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #2804aa;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+.skil2 >a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.skil2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+
+.skil3 >i{
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #2804aa;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+.skil3 >a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.skil3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px
+}
+
+@media (max-width : 500px){
+    .aboutcontainer{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .user >i{
+        font-size: 10rem;
+    }
+
+    .tentang{
+        background-color: #2804aa;
+        color: #ffffff;
+        padding: 20px;
+        line-height: 2.0;
+        border-radius: 15px;
+        padding-right: 80px;
+        font-size: 10px;
+        font-family: "Martian Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 87.5;
+    }
+
+    .aboutme{
+        margin-top : 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skil{
+        display: inline-block;
+    }
+
+    .skil1{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 20px;
+    
+    }
+
+    .skil2{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 20px;
+    
+    }
+
+    .skil3{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 20px;
+    
+    }
+}
+
+.footer{
+    background-color: red;
+    margin-top: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 5px;
+
+    
+}
+
+@media (max-width : 500px){
+    .footer{
+        font-size: 10px;
+    }
+}
